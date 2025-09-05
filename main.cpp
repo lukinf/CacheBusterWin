@@ -19,11 +19,9 @@ first_run:
 	std::cout << "First run? Y/N:";
 	std::cin >> qa;
 	qa = toupper(qa);
-	if (qa == 'Y') {
-		qa = true;
+	if (qa == 'Y') {		
 		firstRun = true;
-	} else if (qa == 'N') {
-		qa = false;
+	} else if (qa == 'N') {		
 		firstRun = false;
 	} else {
 		goto first_run;
