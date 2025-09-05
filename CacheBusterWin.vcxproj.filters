@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\buster.cpp" />
+    <ClCompile Include="src\buster_ex.cpp" />
+    <ClCompile Include="src\directory.cpp" />
+    <ClCompile Include="src\file.cpp" />
+    <ClCompile Include="src\utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\utils.h" />
+    <ClInclude Include="include\params.h" />
+    <ClInclude Include="include\file.h" />
+    <ClInclude Include="include\directory.h" />
+    <ClInclude Include="include\buster_ex.h" />
+    <ClInclude Include="include\buster.h" />
+  </ItemGroup>
+</Project>
