@@ -14,8 +14,6 @@ int main(int argc, const char * argv[]) {
 	bool firstRun = false;
 	char qa;
 
-	std::cout << Utils::get_uuid();
-
 first_run:
 	qa = NULL;
 	std::cout << "First run? Y/N:";
@@ -23,8 +21,10 @@ first_run:
 	qa = toupper(qa);
 	if (qa == 'Y') {
 		qa = true;
+		firstRun = true;
 	} else if (qa == 'N') {
 		qa = false;
+		firstRun = false;
 	} else {
 		goto first_run;
 	}

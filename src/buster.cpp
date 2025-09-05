@@ -61,7 +61,7 @@ void Buster::generate_new_names() {
       std::string newName = newNameSub + "_" + uuid + ext;
       file.set_new_name(newName);
     } else {
-      int charsToRemove = 28 + (int)ext.length() + 1;
+      int charsToRemove = 32 + (int)ext.length() + 1;
       auto uuid = file.get_new_UUID();
       auto newNameSub = name.substr(0, name.length() - charsToRemove);
       std::string newName = newNameSub + "_" + uuid + ext;

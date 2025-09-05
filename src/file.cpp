@@ -47,16 +47,9 @@ std::string& File::get_path(){
 }
 
 std::string& File::get_new_UUID() {
-  /*
-  uuid_t out;
-  char id[32];
-  uuid_generate_random(out);
-  uuid_unparse_lower(out, id);
-  new_UUID = convert_to_string(id, sizeof(id));
-  new_UUID.erase(std::remove(new_UUID.begin(), new_UUID.end(), '-'), new_UUID.end());
-  */
-    std::string uuid = Utils::get_uuid();
-  return uuid;
+    new_UUID = Utils::get_uuid();
+    new_UUID.erase(std::remove(new_UUID.begin(), new_UUID.end(), '-'), new_UUID.end());
+  return new_UUID;
 }
 
 void File::set_new_UUID(const std::string& NewUUID) {
